@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-@import '../../../../../scss/constants';
-@import '../../../../../theme';
+@import "../../../../../scss/constants";
+@import "../../../../../theme";
 
 :host {
   display: flex;
@@ -35,12 +35,12 @@
         }
       }
 
-      .tb-action-button{
+      .tb-action-button {
         padding: 20px 0 16px;
       }
     }
 
-    .oauth-container{
+    .oauth-container {
       padding: 0;
 
       .container-divider {
@@ -54,7 +54,7 @@
           flex: 1;
         }
 
-        .mat-divider-horizontal{
+        .mat-divider-horizontal {
           position: relative;
         }
 
@@ -64,15 +64,12 @@
         }
       }
 
-      .material-icons{
+      .material-icons {
         width: 20px;
         min-width: 20px;
       }
 
       a.login-with-button {
-        color: rgba(black, 0.87);
-        background-color: map-get($tb-dark-theme-background, raised-button);
-
         &:hover {
           border-bottom: 0;
         }
@@ -85,4 +82,3 @@
     }
   }
 }
-
