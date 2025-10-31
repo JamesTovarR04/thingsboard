@@ -20,6 +20,7 @@ import { RouterTabsComponent } from '@home/components/router-tabs.component';
 import { Authority } from '@shared/models/authority.enum';
 import { securityRoutes } from '@home/pages/security/security-routing.module';
 import { profileRoutes } from '@home/pages/profile/profile-routing.module';
+import { dataPolicyRoutes } from '@home/pages/data-policy/data-policy-routing.module';
 import { getCurrentAuthState } from '@core/auth/auth.selectors';
 import { Store } from '@ngrx/store';
 import { AppState } from '@core/core.state';
@@ -54,7 +55,8 @@ const routes: Routes = [
       },
       ...profileRoutes,
       ...securityRoutes,
-      ...notificationUserSettingsRoutes
+      ...notificationUserSettingsRoutes,
+      ...dataPolicyRoutes
     ]
   }
 ];

@@ -3190,6 +3190,9 @@
         "browse-file": "Browse file",
         "browse-files": "Browse files"
     },
+    "data-policy": {
+        "data-policy": "Data Policy"
+    },
     "image": {
         "gallery": "Image gallery",
         "search": "Search image",

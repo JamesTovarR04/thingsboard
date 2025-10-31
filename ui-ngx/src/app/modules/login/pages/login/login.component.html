@@ -61,8 +61,15 @@
               </button>
             </div>
             <div class="tb-action-button flex flex-col">
-              <button mat-raised-button color="primary" style="color: white;" [disabled]="(isLoading$ | async)"
+              <button mat-raised-button color="primary" class="custom-disabled" style="color: white;" [disabled]="(isLoading$ | async) || !acceptDataPolicy"
                       type="submit">{{ 'login.login' | translate }}</button>
+            </div>
+            <div class="flex justify-center" style="margin: auto 30px;">
+              <mat-checkbox [checked]="acceptDataPolicy" (change)="acceptDataPolicy = !acceptDataPolicy" checked>
+                <span class="data-policy">
+                  Acepto la <a href="/data-policy" target="_blank">Política de Tratamiento de Datos Personales</a> y autorizo el uso de mi información conforme a ella.
+                </span>
+              </mat-checkbox>
             </div>
           </div>
         </fieldset>

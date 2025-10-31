@@ -4315,6 +4315,9 @@
   "profiles": {
     "profiles": "Perfiles"
   },
+  "data-policy": {
+    "data-policy": "Política de datos"
+  },
   "security": {
     "security": "Seguridad",
     "general-settings": "Configuraciones generales de seguridad",

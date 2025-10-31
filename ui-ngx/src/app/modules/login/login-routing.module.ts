@@ -25,8 +25,10 @@ import { CreatePasswordComponent } from '@modules/login/pages/login/create-passw
 import { TwoFactorAuthLoginComponent } from '@modules/login/pages/login/two-factor-auth-login.component';
 import { Authority } from '@shared/models/authority.enum';
 import { LinkExpiredComponent } from '@modules/login/pages/login/link-expired.component';
+import { dataPolicyRoutes } from '../home/pages/data-policy/data-policy-routing.module';
 
 const routes: Routes = [
+  ...dataPolicyRoutes,
   {
     path: 'login',
     component: LoginComponent,

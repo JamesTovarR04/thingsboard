@@ -14,7 +14,7 @@
 /// limitations under the License.
 ///
 
-import { Component, OnInit } from '@angular/core';
+import { Component, model, OnInit } from '@angular/core';
 import { AuthService } from '@core/auth/auth.service';
 import { Store } from '@ngrx/store';
 import { AppState } from '@core/core.state';
@@ -31,6 +31,8 @@ import { OAuth2ClientLoginInfo } from '@shared/models/oauth2.models';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent extends PageComponent implements OnInit {
+
+  acceptDataPolicy = true;
 
   passwordViolation = false;
 

@@ -1,0 +1,42 @@
+:host {
+  width: 100%;
+  overflow: scroll;
+}
+
+.data-policy {
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 1000px;
+  margin: auto;
+
+  .text-center {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  ol {
+    counter-reset: item;
+    list-style: none;
+  }
+
+  li {
+    margin-bottom: 15px;
+    h1 {
+      display: inline-block;
+    }
+  }
+
+  ol > li:before {
+    content: counters(item, ".") ". ";
+    counter-increment: item;
+  }
+}
